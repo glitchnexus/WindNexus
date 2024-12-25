@@ -1,0 +1,13 @@
+{
+    "name": "windnexus",
+    "version": "0.0.0",
+    "main": "index.js",
+    "license": "UNLICENSED",
+    "licenseFile": "LICENSE",
+    "author": "GlitchNexus",
+    "description": "WindNexus module by GlitchNexus",
+    "keywords": [
+      "windnexus",
+      "glitchnexus"
+    ]
+  }
