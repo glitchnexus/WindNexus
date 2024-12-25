@@ -7,10 +7,10 @@ class WindNexus {
             throw new WindNexusError('API key is required');
         }
 
-        this.key = options.key;
+        this.apiKey = options.apiKey;  // key değil, apiKey olarak değiştirdik
         this.region = options.region || 'us';
         this.baseURL = options.baseURL || this._getRegionURL();
-
+        
         this.chat = new Chat(this);
         this.images = new Images(this);
     }
@@ -19,11 +19,11 @@ class WindNexus {
         const regions = {
             us: 'https://us.glitchnexus.pro'
         };
-
+        
         if (!regions[this.region]) {
             throw new WindNexusError(`Invalid region: ${this.region}`);
         }
-
+        
         return regions[this.region];
     }
 }
